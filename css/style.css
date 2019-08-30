@@ -16,6 +16,13 @@ nav ul a{
 nav a{
     color:black;
 }
+
+@media (min-width: 576px){
+.jumbotron {
+     padding-top:0; 
+     padding-bottom:0;
+}
+}
 .jumbotron{
     position: relative;
     z-index:-101;
@@ -42,7 +49,7 @@ nav a{
  #aboutUs{
      background-color: #dfdfdf
  }
- .chandShabd{
+ /*.chandShabd{
     display: grid;
     grid-template-columns: 1fr 3fr ;
     grid-column-gap: 50px;
@@ -58,10 +65,10 @@ nav a{
       
       width: 390px;
 
-    }
+    }*/
       .chandShabd img{
         position: relative;
-        width:390px;
+        width:100%;
         overflow-y: hidden;
          height: 270px;
         border-radius: 6px;
@@ -70,8 +77,9 @@ nav a{
      
     
     .chandShabd .t2{ 
-      grid-column: 2/4;
+    /*  grid-column: 2/4;*/
       text-align: left;}
+
     .chandShabd  .title{
         font-size : 30px;
         /*font-family: 'abril fatface';*/
@@ -82,10 +90,11 @@ nav a{
       .chandShabd .title:before{
         content:"";
         height:3px;
-        width: 9.5%;
+        width: 20%;
         position:absolute;
-        
-        background-color: rgb(25,140,231);;
+        margin-top: 2.5rem;
+        margin-bottom: 4 rem;
+        background-color: rgb(25,140,231);
         
       }
      .chandShabd .desc{
@@ -212,6 +221,7 @@ ul, ol {
   justify-content:center;
   width:40%!important;
 font-family: 'M PLUS Rounded 1c', sans-serif;
+font-weight:500!important;
  
 }
 .team .row{
@@ -301,7 +311,10 @@ font-family: 'M PLUS Rounded 1c', sans-serif;
 .We .section-title{
   text-align:center;
   font-family: 'M PLUS Rounded 1c', sans-serif;
-  font-size: 40px;
+  /*font-size: 40px;*/
+  color:rgb(32,58,138);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight:700;
 }
 
 .container-fluid{
@@ -311,8 +324,17 @@ font-family: 'M PLUS Rounded 1c', sans-serif;
     margin-bottom: 2rem;
     
 }
-@media only screen and (min-width:560px){
-  .chandShabd{
-    grid-template-columns: 2fr 2fr ;
-  }
-} 
+
+/*.team .teamHeading  :before{
+  content:"";
+  height:3px;
+  width: 120px;
+  position:absolute;
+  margin-top: 2.5rem;
+   left:45%;
+      margin-left: -30.5px;
+  
+  margin-bottom: 4 rem;
+  background-color: rgb(25,140,231);
+
+}*/
