@@ -17,12 +17,17 @@ nav a{
     color:black;
 }
 
-@media (min-width: 576px){
+@media screen and (max-width: 576px){
 .jumbotron {
      padding-top:0; 
      padding-bottom:0;
 }
+.team_img{
+  width:400px;
+  height:250px;
 }
+}
+
 .jumbotron{
     position: relative;
     z-index:-101;
@@ -108,7 +113,9 @@ nav a{
       }
     
   
-
+.tag{
+  font-family: 'IBM Plex Sans', sans-serif;
+}
  
  /*.footer{
      background-color: rgb(34,34,34)
