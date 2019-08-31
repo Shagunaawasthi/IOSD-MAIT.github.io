@@ -106,7 +106,7 @@ nav a{
      .chandShabd .desc{
         font-size : 20px;
         margin-top: 15px;
-      font-family: 'IBM Plex Sans', sans-serif;
+      font-family: 'IBM Plex Sans', sans-serif!important;
        /*font-family: 'Playfair Display', serif;*/
         
   font-weight: 300;
@@ -320,7 +320,7 @@ font-family: 'M PLUS Rounded 1c', sans-serif;
   text-align:center;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   /*font-size: 40px;*/
-  color:rgb(32,58,138);
+  color:rgb(25,140,231);
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight:700;
 }
@@ -355,6 +355,11 @@ border-radius:0;
         font-size: 35px;
         width:40%;
 
+      }
+      .events .title{
+         font-family: 'M PLUS Rounded 1c', sans-serif;
+         color: rgb(25,140,231);
+         width:100%!important;
       }
      .gPic {
       display:inline-block;
