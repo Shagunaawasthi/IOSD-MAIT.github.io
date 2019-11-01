@@ -294,5 +294,15 @@ border-radius:0;
     border-radius:5px;
        
       }
-
+      .navbar-fixed-top.scrolled {
+        background-color: cyan !important;
+        transition: background-color 200ms linear;
+      }
+      @media only screen and (max-width: 991px) {
+        .whiteforbutton {
+          background-color: white;
+          border-radius: 15px;
+          font-size: 40px;
+        }
+      }
 
