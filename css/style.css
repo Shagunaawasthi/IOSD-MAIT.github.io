@@ -16,23 +16,6 @@ nav ul a:hover {
     background-color: rgba(0, 0, 0, 0) !important;
 }
 
-.nav-wrapper{
-    background-color:rgb(255,255,255);
-   
-}
-nav ul a{
-    color:black;
-}
-nav a{
-    color:black;
-}
-nav .brand-logo{
-  margin-top: 5px;
-}
-
-
-
-
 .jumbotron{
     position: relative;
     z-index:-101;
@@ -299,10 +282,17 @@ border-radius:0;
         transition: background-color 200ms linear;
       }
       @media only screen and (max-width: 991px) {
-        .whiteforbutton {
+        .cyanforbutton {
           background-color: white;
-          border-radius: 15px;
-          font-size: 40px;
+          border-radius: 15px !important;
+          
+        }
+        .nav-link{
+          font-size: 30px !important;
+          background-color: cyan;
         }
       }
-
+      .nav-link{
+        font-size: 15px ;
+      }
+      
