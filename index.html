@@ -31,24 +31,42 @@
   </head>
     <body>
         <section>
-        <div class=" navbar-fixed " style="margin-right:auto;">
-            <nav>
-              <div class="nav-wrapper" >
-                <a class="nav-link brand-logo" href="#0"><img src="IOSD-logo.png"  ></a>
-                <ul class="right hide-on-med-and-down" >
-                  <li><a  href="#0" >Home</a></li>
-                  <li><a  href="#1">About Us</a></li>
-                  
-                  <li><a  href="#2">Services</a></li>
-                  <li><a  href="#3">The Team</a></li>
-                  <li><a href="#4">Contact Us </a></li>
-                  <li style="border-radius:25%;"><a href="https://registrations.iosd.tech">Join Us </a></li>
-
-                 
-                </ul>
-              </div>
-            </nav>
-          </div>
+          <div class="nav1" style="display: flex; justify-content: center;">
+            <nav class="navbar navbar-expand-lg navbar-light  fixed-top color-white navbar-fixed-top" style="font-size: 22px;background-color: white;">
+          
+           <div class="col">
+           <a class="navbar-brand" href="https://iosd.tech/"><img src="IOSD-logo.png"></a>
+           </div>
+         
+          
+           <button class="navbar-toggler btn-dark collapsible " style="background-color: white;border-color: black;border-radius: 20px;"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+              <span class="navbar-toggler-icon"></span>
+          </button>
+           
+           <div class="collapse navbar-collapse cyanforbutton content" id="navbarSupportedContent">
+             <ul class="navbar-nav mr-auto" style="display: flex">
+               <li class="nav-item">
+                 <a class="nav-link" href="#0" >Home <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#1">About Us</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#2">Services</a>
+               </li>
+               <li class="nav-item">
+                <a class="nav-link" href="#3">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#4">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://registrations.iosd.tech" target="_blank">Join Us</a>
+              </li>
+             </ul>
+             
+           </div>
+         </nav>
           <div class="jumbotron jumbotron-fluid " id="0" style="width: 100%!important">
                 <video id="video-background" preload muted autoplay loop>
                         <source  src="FINALBG_PRO.mp4" type="video/mp4">
@@ -211,6 +229,12 @@
     </footer>
    
     <script type="text/javascript">AOS.init();</script>
-
+    <script>$(function () {
+      $(document).scroll(function () {
+        var $nav = $(".navbar-fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      });
+    });
+        </script>  
     </body>
 </html>
