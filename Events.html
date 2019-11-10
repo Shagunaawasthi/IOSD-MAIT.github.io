@@ -6,9 +6,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
           <link rel="stylesheet" href="fonts/icomoon/style.css">
             <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-            <link rel="stylesheet" href="./css/style.css">
+            <link rel="stylesheet" href="./css/event.css">
         <link rel="stylesheet" href="./css/aos.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
@@ -18,27 +19,48 @@
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700&display=swap" rel="stylesheet">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class= "main">
  <section>
-        <div class="navbar-fixed">
-            <nav>
-              <div class="nav-wrapper">
-                <a  class="nav-link brand-logo" href="index.html#0" ><img src="IOSD-logo.png" ></a>
-                <ul class="right hide-on-med-and-down">
-                  <li><a class="nav-link" href="index.html#0">Home</a></li>
-                  <li><a class="nav-link" href="index.html#1">About Us</a></li>
-                  
-                  <li><a class="nav-link" href="index.html#2">Services</a></li>
-                  <li><a class="nav-link" href="index.html#3">The Team</a></li>
-                  <li><a class="nav-link" href="#4">Contact Us </a></li>
-                  <li style="border-radius:25%;"><a href="https://registrations.iosd.tech">Join Us </a></li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-         
+    <nav class="navbar navbar-expand-lg navbar-light  fixed-top color-white navbar-fixed-top" style="font-size: 22px;background-color: white;height: 72px;">			
+				<div class="col">
+					<a class="navbar-brand" href="https://iosd.tech/"><img src="IOSD-logo.png"></a>
+				</div>
+				<button class="navbar-toggler btn-dark collapsible " id="nav-close" style="background-color: white;border-color: black;border-radius: 20px;"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+						<span aria-hidden="true" style="font-size: 30px;">&times;</span>
+				</button>
+							
+				<button class="navbar-toggler btn-dark collapsible " id="nav-open" style="background-color: white;border-color: black;border-radius: 20px;"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+					<span class="navbar-toggler-icon"></span>
+				</button>			
+				<div class="collapse navbar-collapse blackforbutton content" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto" style="display: flex">
+						<li class="nav-item">
+							<a class="nav-link" id="nav-link1" href="#impulse19" >Impulse 19<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="nav-link2" href="#impulse18">Impulse 18</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="nav-link3" href="#orientation">Orientation</a>
+            </li>
+						<li class="nav-item">
+							<a class="nav-link" id="nav-link4" href="#gallery">Photo Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="nav-link5" href="#4">Contact Us</a>
+              </li>
+						<li class="nav-item">
+							<a class="nav-link" id="nav-link6" href="https://registrations.iosd.tech" target="_blank">Join Us</a>
+						</li>
+					</ul>				
+				</div>
+			</nav>      
            
    
         </section>
@@ -53,7 +75,7 @@
                              <div class="row ">
                              
                                     </div>
-                            <div class="title"  style="text-align:right;margin-top:3rem;font-weight:500;"  data-aos="flip-down">IMPULSE'19</div>
+                            <div class="title"  style="text-align:right;margin-top:3rem;font-weight:500;" id="impulse19"  data-aos="flip-down">IMPULSE'19</div>
                             <div class ="desc mt-5" style="text-align:right; "  data-aos="flip-down" >
                                 <p>The most vibrant and astounding tech. festival organised by IOSD-MAIT with a colossal range of events and opportunity to win exciting prizes lined up for coding enthusiasts like HackMait 2.0, DevDash, Algorythm, Explora, Deadshot, etc.
                                   </p></div>
@@ -70,7 +92,7 @@
                                <div class="row ">
                              
                                     </div>
-                            <div class="title"  style="text-align:left;margin-top:3rem;font-weight:500;"  data-aos="flip-down">IMPULSE'18</div>
+                            <div class="title"  style="text-align:left;margin-top:3rem;font-weight:500;" id="impulse18"  data-aos="flip-down">IMPULSE'18</div>
                             <div class ="desc mt-5" style="text-align:left ; "  data-aos="flip-down">
                                 <p>
 The first Techfest organized by IOSD-MAIT with a plethora of events like UI/UX Designing, Competitive Coding, workshop on Game Development, etc. The first edition of Hack MAIT was the highlight of the fest. With an amazing response, the fest was a huge hit and a number of amazing developers and designers left with lots of prizes and huge smiles on their face.
@@ -94,7 +116,7 @@ The first Techfest organized by IOSD-MAIT with a plethora of events like UI/UX D
                              <div class="row ">
                              
                                     </div>
-                            <div class=" ori title"  style="text-align:right;margin-top:3rem;font-weight:500;" data-aos="flip-down">ORIENTATION'19</div>
+                            <div class=" ori title"  style="text-align:right;margin-top:3rem;font-weight:500;" id="orientation" data-aos="flip-down">ORIENTATION'19</div>
                             <div class ="desc mt-5" style="text-align:right; " >
                                 <p>Orientation session is organised every year for the students wherein they can interact, learn, explore about the society, related opportunities, events and much more !
                                   </p></div>
@@ -109,10 +131,10 @@ The first Techfest organized by IOSD-MAIT with a plethora of events like UI/UX D
                 <div class="row">
                         <div class="t1 col-12   mt-5 mb-5">
                            
-                               <div class="row ">
+                               <div class="row" id="gallery">
                              
                                     </div>
-                                     <div class="title ml-5"  style="text-align:center;font-weight:500;" data-aos="fade-down">&#39;&#39; INTELLIGENT PEOPLE. UNCOMMON IDEAS. &#39;&#39;</div>
+                                     <div class="title ml-5"  style="text-align:center;font-weight:500;"  data-aos="fade-down">&#39;&#39; INTELLIGENT PEOPLE. UNCOMMON IDEAS. &#39;&#39;</div>
                        </div>
                 </div>
                 </div>
@@ -213,5 +235,20 @@ The first Techfest organized by IOSD-MAIT with a plethora of events like UI/UX D
       </div>
     </footer>
     <script type="text/javascript">AOS.init();</script>
+    <script>$(function () {
+        $(document).scroll(function () {
+        var $nav = $(".navbar-fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+      });
+        </script>
+        <script>$(function () {
+          $(document).scroll(function () {
+          var $nav1 = $(".nav-link");
+          $nav1.toggleClass('scrolled', $(this).scrollTop() > $nav1.height());
+          });
+        });
+        </script>
+        <script src="./js/eventscript.js"></script> 
 </body>
 </html>
