@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
           <link rel="stylesheet" href="fonts/icomoon/style.css">
             <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-            <link rel="stylesheet" href="./css/style.css">
+            <link rel="stylesheet" href="./css/classes.css">
         <link rel="stylesheet" href="./css/aos.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
@@ -22,27 +22,35 @@
 <body>
 <div class= "main">
  <section>
-        <div class="navbar-fixed">
-            <nav>
-              <div class="nav-wrapper">
-                <a  class="nav-link brand-logo" href="index.html#0"><img src="IOSD-logo.png" ></a>
-                <ul class="right hide-on-med-and-down">
-                  <li><a class="nav-link" href="index.html#0">Home</a></li>
-                  <li><a class="nav-link" href="index.html#1">About Us</a></li>
-                  
-                  <li><a class="nav-link" href="index.html#2">Services</a></li>
-                  <li><a class="nav-link" href="index.html#3">The Team</a></li>
-                  <li><a class="nav-link" href="#4">Contact Us </a></li>
-                   <li style="border-radius:25%;"><a href="https://registrations.iosd.tech">Join Us </a></li>
-                 
-                </ul>
-              </div>
-            </nav>
-          </div>
-         
-           
-   
-        </section>
+    <nav class="navbar navbar-expand-lg navbar-light  fixed-top color-white navbar-fixed-top" style="font-size: 22px;background-color: white;height: 72px;">			
+				<div class="col">
+					<a class="navbar-brand" href="https://iosd.tech/"><img src="IOSD-logo.png"></a>
+				</div>
+				<button class="navbar-toggler btn-dark collapsible " id="nav-close" style="background-color: white;border-color: black;border-radius: 20px;"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+						<span aria-hidden="true" style="font-size: 30px;">&times;</span>
+				</button>
+							
+				<button class="navbar-toggler btn-dark collapsible " id="nav-open" style="background-color: white;border-color: black;border-radius: 20px;"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+					<span class="navbar-toggler-icon"></span>
+				</button>			
+				<div class="collapse navbar-collapse blackforbutton content" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto" style="display: flex">
+						<li class="nav-item">
+							<a class="nav-link" id="nav-link1" href="#classes" >Classes<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="nav-link2" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="nav-link3" href="#4">Contact Us</a>
+              </li>
+						<li class="nav-item">
+							<a class="nav-link" id="nav-link4" href="https://registrations.iosd.tech" target="_blank">Join Us</a>
+            </li>
+					</ul>				
+				</div>
+			</nav>  
+ </section>
 
  <section class="AboutUs" id="1">
              
@@ -57,7 +65,7 @@
                              <div class="row ">
                              
                                     </div>
-                            <div class="title"  style="text-align:right;margin-top:3rem;font-weight:500;"  data-aos="flip-down">CLASSES</div>
+                            <div class="title"  style="text-align:right;margin-top:3rem;font-weight:500;" id="classes"  data-aos="flip-down">CLASSES</div>
                             <div class ="desc mt-5" style="text-align:right; "  data-aos="flip-down">
                                 <p>Special Interest Groups are organised by our dedicated mentors on a regular basis to guide the students on a plethora of techcourses that we offer.
                                   </p></div>
@@ -75,7 +83,7 @@
                                <div class="row ">
                              
                                     </div>
-                                     <div class="title "  style="text-align:center;font-weight:500;" data-aos="fade-down">&#39;&#39; MIND IS A TERRIBLE THING TO WASTE &#39;&#39;</div>
+                                     <div class="title " id="gallery"  style="text-align:center;font-weight:500;" data-aos="fade-down">&#39;&#39; MIND IS A TERRIBLE THING TO WASTE &#39;&#39;</div>
                        </div>
                 </div>
                 </div>
@@ -175,6 +183,24 @@
         </div>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script type="text/javascript">AOS.init();</script>
+    <script>$(function () {
+        $(document).scroll(function () {
+        var $nav = $(".navbar-fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+      });
+        </script>
+        <script>$(function () {
+          $(document).scroll(function () {
+          var $nav1 = $(".nav-link");
+          $nav1.toggleClass('scrolled', $(this).scrollTop() > $nav1.height());
+          });
+        });
+        </script>
+        <script src="./js/classesscript.js"></script> 
 </body>
 </html>
